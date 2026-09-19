@@ -1,0 +1,640 @@
+{
+  "version": 1,
+  "title": "The apartment",
+  "subtitle": "7 viewpoints · Drag to explore",
+  "startNode": "P1",
+  "coordinates": {
+    "units": "schematic",
+    "horizontalAxes": [
+      "x",
+      "y"
+    ],
+    "upAxis": "z",
+    "note": "Plan traced from the supplied Polycam screenshot, with user-requested table, counter and door corrections. Drawing units follow image proportions, not measured metres. Camera locations remain approximate."
+  },
+  "defaults": {
+    "yawOffset": 0,
+    "yaw": -90,
+    "pitch": -12,
+    "fov": 75,
+    "cameraHeight": 1.4
+  },
+  "attribution": {
+    "text": "ExploreHome · 360°",
+    "url": ""
+  },
+  "floorplan": {
+    "bounds": [
+      0,
+      0,
+      7.1,
+      15.4
+    ],
+    "outline": [
+      [
+        0,
+        0
+      ],
+      [
+        7.1,
+        0
+      ],
+      [
+        7.1,
+        10.6
+      ],
+      [
+        6.1,
+        10.6
+      ],
+      [
+        6.1,
+        12.65
+      ],
+      [
+        3.75,
+        12.65
+      ],
+      [
+        3.75,
+        15.4
+      ],
+      [
+        0,
+        15.4
+      ],
+      [
+        0,
+        10.7
+      ],
+      [
+        2.3,
+        10.7
+      ],
+      [
+        2.3,
+        4.95
+      ],
+      [
+        0,
+        4.95
+      ]
+    ],
+    "walls": [
+      [
+        [
+          2.3,
+          7.6
+        ],
+        [
+          5.15,
+          7.6
+        ],
+        [
+          5.15,
+          7.75
+        ]
+      ],
+      [
+        [
+          5.15,
+          8.45
+        ],
+        [
+          5.15,
+          8.6
+        ],
+        [
+          3.85,
+          10.7
+        ],
+        [
+          0,
+          10.7
+        ]
+      ],
+      [
+        [
+          3.85,
+          10.7
+        ],
+        [
+          3.8,
+          11.0
+        ]
+      ],
+      [
+        [
+          3.8,
+          11.9
+        ],
+        [
+          3.75,
+          12.65
+        ]
+      ]
+    ],
+    "windows": [
+      [
+        [
+          2.1,
+          0
+        ],
+        [
+          5.2,
+          0
+        ]
+      ],
+      [
+        [
+          0.35,
+          4.95
+        ],
+        [
+          2.05,
+          4.95
+        ]
+      ]
+    ],
+    "doors": [
+      {
+        "id": "bathroom",
+        "hinge": [
+          5.15,
+          7.75
+        ],
+        "closed": [
+          5.15,
+          8.45
+        ],
+        "open": [
+          4.45,
+          7.75
+        ],
+        "sweep": 1
+      },
+      {
+        "id": "bedroom",
+        "hinge": [
+          3.8,
+          11.0
+        ],
+        "closed": [
+          3.8,
+          11.9
+        ],
+        "open": [
+          2.9,
+          11.0
+        ],
+        "sweep": 1
+      },
+      {
+        "id": "entrance",
+        "hinge": [
+          5.75,
+          12.65
+        ],
+        "closed": [
+          4.85,
+          12.65
+        ],
+        "open": [
+          5.75,
+          11.75
+        ],
+        "sweep": 1
+      }
+    ],
+    "furniture": [
+      {
+        "id": "tv",
+        "x": 0.03,
+        "y": 1.65,
+        "width": 0.4,
+        "height": 2.1,
+        "label": "TV"
+      },
+      {
+        "id": "sofa",
+        "x": 1.5,
+        "y": 1.05,
+        "width": 1.3,
+        "height": 2.65,
+        "label": "Sofa"
+      },
+      {
+        "id": "table",
+        "x": 4.17,
+        "y": 1.15,
+        "width": 1.22,
+        "height": 2.3,
+        "label": "Table"
+      },
+      {
+        "id": "kitchen-left",
+        "x": 2.3,
+        "y": 5.05,
+        "width": 0.7,
+        "height": 1.65
+      },
+      {
+        "id": "corner-counter",
+        "x": 2.3,
+        "y": 6.7,
+        "width": 0.7,
+        "height": 0.85
+      },
+      {
+        "id": "kitchen-bottom",
+        "x": 3,
+        "y": 6.7,
+        "width": 2.05,
+        "height": 0.85,
+        "label": "Counter"
+      },
+      {
+        "id": "sideboard",
+        "x": 6.55,
+        "y": 4.95,
+        "width": 0.55,
+        "height": 1.05
+      },
+      {
+        "id": "bed",
+        "x": 0.1,
+        "y": 11.75,
+        "width": 2.5,
+        "height": 1.95,
+        "label": ""
+      },
+      {
+        "id": "nightstand-top",
+        "x": 0.1,
+        "y": 11.15,
+        "width": 0.55,
+        "height": 0.55
+      },
+      {
+        "id": "nightstand-bottom",
+        "x": 0.1,
+        "y": 13.8,
+        "width": 0.55,
+        "height": 0.65
+      },
+      {
+        "id": "wardrobe",
+        "x": 1.4,
+        "y": 14.7,
+        "width": 2.25,
+        "height": 0.65,
+        "label": "Wardrobe"
+      }
+    ],
+    "labels": [
+      {
+        "position": [
+          3.35,
+          10.12
+        ],
+        "text": "Shower"
+      },
+      {
+        "position": [
+          1.6,
+          14.15
+        ],
+        "text": "Bedroom"
+      }
+    ],
+    "source": "references/polycam-floor-plan.png",
+    "note": "Photo proportions traced by hand; table extended to the red U mark, missing counter fills the red box. Door positions approximate; swings indicative. User corrections: P7 over bed, P6 nearer entrance, second living-room window, bathroom fixtures and shower screen. Map route lines omitted.",
+    "fixtures": [
+      {
+        "type": "Sink",
+        "position": [
+          3.7,
+          7.85
+        ],
+        "width": 0.85,
+        "height": 0.45
+      },
+      {
+        "type": "Toilet",
+        "position": [
+          2.72,
+          8.5
+        ],
+        "width": 0.6,
+        "height": 0.85,
+        "rotation": -90
+      },
+      {
+        "type": "Washing machine",
+        "position": [
+          4.65,
+          8.95
+        ],
+        "width": 0.57,
+        "height": 0.57,
+        "rotation": 32
+      }
+    ],
+    "shower": {
+      "outline": [
+        [
+          2.3,
+          9.6
+        ],
+        [
+          4.530952380952381,
+          9.6
+        ],
+        [
+          3.85,
+          10.7
+        ],
+        [
+          2.3,
+          10.7
+        ]
+      ],
+      "divider": [
+        [
+          2.3,
+          9.6
+        ],
+        [
+          4.530952380952381,
+          9.6
+        ]
+      ]
+    }
+  },
+  "nodes": {
+    "P1": {
+      "label": "Kitchen side",
+      "image": "panoramas/P1.png",
+      "position": [
+        4.6,
+        4.45,
+        0
+      ],
+      "yawOffset": 50,
+      "neighbors": [
+        {
+          "target": "P2",
+          "yaw": -159.44395478041653,
+          "distance": 2.581600561797629,
+          "path": [
+            [
+              3.4,
+              4.0
+            ]
+          ],
+          "hotspot": {
+            "yaw": -167.07,
+            "pitch": -31.98
+          }
+        },
+        {
+          "target": "P3",
+          "yaw": -19.093492000485615,
+          "distance": 2.5267680925418947,
+          "path": [
+            [
+              5.9,
+              4.0
+            ]
+          ],
+          "hotspot": {
+            "yaw": -96.88,
+            "pitch": -34.13
+          }
+        },
+        {
+          "target": "P4",
+          "yaw": 58.3924977537511,
+          "distance": 4.00793465611502,
+          "path": [
+            [
+              5.8,
+              6.4
+            ]
+          ],
+          "hotspot": {
+            "yaw": 22.53,
+            "pitch": -24.86
+          }
+        }
+      ]
+    },
+    "P2": {
+      "label": "By the sofa",
+      "image": "panoramas/P2.png",
+      "position": [
+        3.4,
+        2.7,
+        0
+      ],
+      "yawOffset": 165,
+      "neighbors": [
+        {
+          "target": "P1",
+          "yaw": 90.0,
+          "distance": 2.581600561797629,
+          "path": [
+            [
+              3.4,
+              4.0
+            ]
+          ],
+          "hotspot": {
+            "yaw": -106.32869286780416,
+            "pitch": -27.47203884843304
+          }
+        }
+      ]
+    },
+    "P3": {
+      "label": "Wall side of table",
+      "image": "panoramas/P3.png",
+      "position": [
+        5.95,
+        2.85,
+        0
+      ],
+      "yawOffset": 0,
+      "neighbors": [
+        {
+          "target": "P1",
+          "yaw": 92.48955292199915,
+          "distance": 2.5267680925418947,
+          "path": [
+            [
+              5.9,
+              4.0
+            ]
+          ],
+          "hotspot": {
+            "yaw": 137.75715663265606,
+            "pitch": -29.25879716491255
+          }
+        }
+      ]
+    },
+    "P4": {
+      "label": "Bathroom corridor",
+      "image": "panoramas/P4.png",
+      "position": [
+        6.05,
+        8.1,
+        0
+      ],
+      "yawOffset": -50,
+      "neighbors": [
+        {
+          "target": "P1",
+          "yaw": -98.3658861240326,
+          "distance": 4.00793465611502,
+          "path": [
+            [
+              5.8,
+              6.4
+            ]
+          ],
+          "hotspot": {
+            "yaw": -56.21,
+            "pitch": -21.61
+          }
+        },
+        {
+          "target": "P5",
+          "yaw": 180.0,
+          "distance": 2.39833240637717,
+          "path": [
+            [
+              5.15,
+              8.1
+            ]
+          ],
+          "hotspot": {
+            "yaw": -139.41,
+            "pitch": -35.41
+          }
+        },
+        {
+          "target": "P6",
+          "yaw": 104.67639313745002,
+          "distance": 4.031608741202081,
+          "path": [
+            [
+              5.5,
+              10.2
+            ]
+          ],
+          "hotspot": {
+            "yaw": 166.0,
+            "pitch": -19.58
+          }
+        }
+      ]
+    },
+    "P5": {
+      "label": "Bathroom",
+      "image": "panoramas/P5.png",
+      "position": [
+        3.8,
+        8.75,
+        0
+      ],
+      "yawOffset": 68,
+      "neighbors": [
+        {
+          "target": "P4",
+          "yaw": -25.70995378081127,
+          "distance": 2.39833240637717,
+          "path": [
+            [
+              5.15,
+              8.1
+            ]
+          ],
+          "hotspot": {
+            "yaw": -67.58,
+            "pitch": -27.5
+          }
+        }
+      ]
+    },
+    "P6": {
+      "label": "Entrance hall",
+      "image": "panoramas/P6.png",
+      "position": [
+        5.3,
+        12.05,
+        0
+      ],
+      "yawOffset": 50,
+      "neighbors": [
+        {
+          "target": "P4",
+          "yaw": -83.8298249049704,
+          "distance": 4.031608741202081,
+          "path": [
+            [
+              5.5,
+              10.2
+            ]
+          ],
+          "hotspot": {
+            "yaw": -137.59,
+            "pitch": -27.09
+          }
+        },
+        {
+          "target": "P7",
+          "yaw": -159.86369657175183,
+          "distance": 4.102150488140684,
+          "path": [
+            [
+              3.8,
+              11.5
+            ]
+          ],
+          "hotspot": {
+            "yaw": 89.9,
+            "pitch": -12.07
+          }
+        }
+      ]
+    },
+    "P7": {
+      "label": "Bedroom",
+      "image": "panoramas/P7.png",
+      "position": [
+        1.55,
+        12.6,
+        0
+      ],
+      "yawOffset": -30,
+      "neighbors": [
+        {
+          "target": "P6",
+          "yaw": -26.053495310490945,
+          "distance": 4.102150488140684,
+          "path": [
+            [
+              3.8,
+              11.5
+            ]
+          ],
+          "hotspot": {
+            "yaw": 0.0,
+            "pitch": -25.87
+          }
+        }
+      ]
+    }
+  }
+}

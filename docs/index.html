@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17201f" />
+  <meta name="description" content="Explore seven connected apartment viewpoints in 360 degrees." />
+  <title>The apartment | 360 tour</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317201f'/%3E%3Cpath d='M8 16L16 8L24 16V25H8Z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-_8gLlMZu.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BhuE65kU.css">
+</head>
+<body>
+  <main id="app">
+    <canvas id="viewport" tabindex="0" aria-label="360 degree apartment view. Drag to look, scroll to zoom, arrow keys to turn, W to move forward."></canvas>
+    <div id="markers" aria-label="Nearby viewpoints"></div>
+    <header class="identity">
+      <span class="eyebrow">EXPLORE / HOME</span>
+      <h1 id="tour-title">The apartment</h1>
+      <p id="tour-subtitle">360° interior tour</p>
+    </header>
+    <nav class="top-controls" aria-label="View controls">
+      <button id="help-toggle" class="icon-button" aria-label="Show controls" title="Controls">?</button>
+      <button id="debug-toggle" class="icon-button" aria-label="Toggle debug mode" aria-pressed="false" title="Debug (D)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16"/></svg></button>
+      <button id="fullscreen" class="icon-button" aria-label="Enter fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
+    </nav>
+    <button id="motion-toggle" class="motion-toggle glass" aria-label="Enable motion controls" aria-pressed="false" aria-describedby="motion-status">Motion off</button>
+    <div id="motion-status" class="motion-status glass" role="status" aria-live="polite" hidden></div>
+    <aside id="help" class="glass help" hidden>
+      <h2>Move through the space</h2>
+      <p>Drag to look around. Click a floor ring to move. Scroll or pinch to zoom.</p>
+      <p>Choose a point on the map to follow the connected route.</p>
+      <p>On your phone, tap Motion to look around by turning and tilting it. Allow motion access if asked. Swipe to adjust your direction, or tap Motion again to turn it off.</p>
+      <p class="secondary">Keyboard: arrows to look, W to step forward, + / − to zoom, D for debug, Esc to stop a route.</p>
+    </aside>
+    <aside class="map-panel glass" aria-label="Apartment navigation map">
+      <div class="map-header"><button id="map-toggle" aria-expanded="true"><span>Floor plan</span><span id="map-chevron" aria-hidden="true">−</span></button><button id="map-enlarge" aria-label="Enlarge floor plan" aria-pressed="false">⤢</button></div>
+      <div id="map-body">
+        <svg id="minimap" viewBox="0 0 240 260" role="group" aria-label="Viewpoint map"></svg>
+        <div class="map-caption"><span class="map-key"></span> Approximate layout <span id="view-count"></span></div>
+        <label class="viewpoint-picker"><span>Go to a viewpoint</span><select id="viewpoint-select" aria-label="Go to a viewpoint"></select></label>
+      </div>
+    </aside>
+    <aside id="debug" class="glass debug" hidden>
+      <h2>Tour geometry</h2>
+      <pre id="debug-values"></pre>
+      <label>Panorama yaw offset <output id="offset-value">0°</output><input id="yaw-offset" type="range" min="-180" max="180" step="1" value="0" /></label>
+      <div id="debug-neighbors"></div>
+      <p class="secondary">Layout follows your Polycam photo with the marked corrections. Viewpoint positions and door swings are approximate.</p>
+    </aside>
+    <footer class="bottom-bar">
+      <div class="position-pill glass"><span class="position-dot"></span><span id="position-label">Opening the apartment</span></div>
+      <div class="look-controls glass" aria-label="Look controls">
+        <button id="turn-left" aria-label="Look left" title="Look left">‹</button>
+        <button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+        <button id="reset-view" aria-label="Reset view" title="Reset view"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg></button>
+        <button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+        <button id="turn-right" aria-label="Look right" title="Look right">›</button>
+      </div>
+      <a id="attribution" target="_blank" rel="noreferrer"></a>
+    </footer>
+    <div id="hint" class="hint">Drag to look around <span>·</span> Click a ring to move</div>
+    <div id="status" class="status glass" role="status" aria-live="polite">Loading the apartment…</div>
+    <div id="error" class="error glass" role="alert" hidden><h2>Could not open this view</h2><p id="error-message"></p><button id="retry">Try again</button></div>
+  </main>
+</body>
+</html>
